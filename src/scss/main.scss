@@ -1,0 +1,112 @@
+$base-color: #eeeef4;
+$white: #fff;
+$site-pink: #f77f87;
+$font-color: #4d4d4d;
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: $base-color url(../../public/bg.jpg) repeat 0 0;
+    color: $font-color;
+}
+
+img {
+    display: block;
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+#container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+
+    padding-bottom: 2em;
+    @media screen and (min-width: 969px) {
+        width: 970px;
+  
+    }
+}
+
+
+.bgcon{
+    width: 100%;
+    background-size: 100%;
+}
+
+.header{
+    width: 100%; 
+    background: $white url(../../public/logo_2.png) no-repeat center center;
+    background-size: auto 60%;
+    display: flex; 
+    align-items: center; 
+    height: 60px;
+    border-bottom: 2px solid #cccccc;
+    .btn_back{
+        flex-grow: 1;
+        margin-left: 15px;
+        height: 100%; 
+        img {
+            height: 100%; 
+        }
+    }
+   
+    @media screen and (max-width: 350px) {
+       background-size: auto 40%;
+    }
+}
+
+.navCon{
+    display: flex;
+    justify-content: center;
+    background: $white;
+    a{
+        text-decoration: none;
+        color: $font-color;
+    }
+    .nav{
+        width: 124px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        display: block;
+        font-size: 26px;
+        
+    }
+    .active{
+        border-bottom: 5px solid $site-pink;
+    }
+}
+.articleCon{
+    width: 100%;
+    position: relative;
+    background: #fff; 
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+    .area{
+        position: absolute;
+        background: $site-pink;
+        color: $white;
+        padding: 0.2em 1em;
+    }
+    .articlesImage{
+        img{
+            width: 100%;
+        }
+    }
+  
+}
+
+.fix_viewport_resize_oninput {
+    position: fixed !important;
+    width: 100% !important;
+}
+
