@@ -7,9 +7,10 @@ import angular from 'angular';
 
 import "popper.js";
 import "./scss/main.scss";
-
 var campaign_name = "eatgoodsite";
+import "../node_modules/tiny-slider/src/tiny-slider.scss";
 
+import "../node_modules/font-awesome/css/font-awesome.css";
 
 
 var eatgoodsiteApp = angular.module('eatgoodsite', []);

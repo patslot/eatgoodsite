@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "./";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 8);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10702,7 +10702,7 @@ module.exports = g;
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(5);
+__webpack_require__(7);
 module.exports = angular;
 
 
@@ -10714,6 +10714,18 @@ module.exports = angular;
 
 /***/ }),
 /* 4 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 6 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13337,7 +13349,7 @@ Popper.Defaults = Defaults;
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))
 
 /***/ }),
-/* 5 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {/**
@@ -49774,7 +49786,7 @@ $provide.value("$locale", {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 6 */
+/* 8 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -49783,9 +49795,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angular__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angular___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_angular__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_popper_js__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__scss_main_scss__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_popper_js__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__scss_main_scss__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__scss_main_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__scss_main_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__node_modules_tiny_slider_src_tiny_slider_scss__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__node_modules_tiny_slider_src_tiny_slider_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__node_modules_tiny_slider_src_tiny_slider_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__node_modules_font_awesome_css_font_awesome_css__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__node_modules_font_awesome_css_font_awesome_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__node_modules_font_awesome_css_font_awesome_css__);
 
 __webpack_provided_window_dot_jQuery = __WEBPACK_IMPORTED_MODULE_0_jquery___default.a;
 window.$ = __WEBPACK_IMPORTED_MODULE_0_jquery___default.a;
@@ -49795,8 +49811,9 @@ global.jQuery = __WEBPACK_IMPORTED_MODULE_0_jquery___default.a;
 
 
 
-
 var campaign_name = "eatgoodsite";
+
+
 
 
 
