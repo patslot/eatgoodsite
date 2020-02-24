@@ -16,8 +16,34 @@ import "../node_modules/font-awesome/css/font-awesome.css";
 var eatgoodsiteApp = angular.module('eatgoodsite', []);
 
 eatgoodsiteApp.controller('eatgoodsiteController', function eatgoodsiteController($scope, $timeout) {
-
-   
+    $scope.platform = "web"; 
+    $scope.storeList = [
+        {
+            "sort" : 2,
+            "publicDate" :  new Date("2020-02-24"),
+            "area" : "香港 ｜北角",
+            "image" : "./public/oisix/feature.png",
+            "link" : "./oisix/index.html",
+            "title" : "Oisix香港 - 日本美食宅配",
+            "address" : "Osaki Farm: Gate City Osaki East 5F 1-11-2 Osaki, Shinagawa-ku, Tokyo 141-0032, Japan"
+        }, {
+            "sort" : 2,
+            "publicDate" :  new Date("2020-02-25"),
+            "area" : "香港 ｜銅鑼灣",
+            "image" : "./public/oisix/feature.png",
+            "link" : "./oisix/index.html",
+            "title" : "Oisix香港 - 日本美食宅配",
+            "address" : "Osaki Farm: Gate City Osaki East 5F 1-11-2 Osaki, Shinagawa-ku, Tokyo 141-0032, Japan"
+        },{
+            "sort" : 1,
+            "publicDate" :  new Date("2020-02-25"),
+            "area" : "香港 ｜中環",
+            "image" : "./public/oisix/feature.png",
+            "link" : "./oisix/index.html",
+            "title" : "Oisix香港 - 日本美食宅配",
+            "address" : "Osaki Farm: Gate City Osaki East 5F 1-11-2 Osaki, Shinagawa-ku, Tokyo 141-0032, Japan"
+        }
+    ];
 
     function gaEventcall(action, category, label, value){
         gtag('event', action, {
@@ -45,12 +71,12 @@ eatgoodsiteApp.controller('eatgoodsiteController', function eatgoodsiteControlle
 
     $scope.$watch('$viewContentLoaded',function () {
         var payload = {};
-        
         $timeout(function () {
            
         }, 0);
     });
 
+    console.log( $scope.storeList );
   
 });
 
