@@ -11,7 +11,7 @@
 	<meta property="og:description"   content=" "/>
 	<meta property="og:image"         content="https://campaign.nextdigital.com.hk/eatgoodsite/public/fbshare.jpg"/>
 	<meta property="fb:app_id"     	  content="2303520236552529"/>
-	<title>和你食好Site</title>
+	<title>在家食好Site</title>
 	<link rel="shortcut icon" href="favicon.ico">
 	<script type="text/javascript" src="./public/assets/bundle.js"></script>
 	<link rel="stylesheet" type="text/css" href="./public/assets/main.css">
@@ -57,15 +57,15 @@
             </div>
             <div class="relatedarticleCon">
                 <div class="relatedarticleHeader">相關文章</div>
-                <div class="relatedarticle">
+                <div class="relatedarticle" ng-repeat="relatedarticle in storedetail.relatedArticles">
                     <div class="relatedarticleLink">
-                        <a href="https://etw.nextdigital.com.hk/article/3_60608527" target="_blank"></a>
+                        <a href="{{ relatedarticle.relatedarticleLink }}" target="_blank"></a>
                     </div>
                     <div class="relatedarticleImage">
-                        <img src="./public/doublechefsmarket/relate1.jpg">
+                        <img src="{{ relatedarticle.relatedarticleImage }}">
                     </div>
                     <div class="relatedarticleTitle">
-                        【火鍋燒肉外賣】日菜廚師主理 高質外送和牛壽喜燒＋Shabu Shabu＋燒肉 包裝盒附QR Code教煮
+                        {{ relatedarticle.relatedarticleTitle }}
                     </div>
                  </div>
             </div>

@@ -8,6 +8,7 @@ import "angular-sanitize/angular-sanitize.js";
 import moment from 'moment';
 import "popper.js";
 import "./scss/main.scss";
+import { tns } from  "../node_modules/tiny-slider/src/tiny-slider";
 
 import "../node_modules/tiny-slider/src/tiny-slider.scss";
 import "../node_modules/font-awesome/css/font-awesome.css";
@@ -62,9 +63,6 @@ eatgoodsiteApp.controller('eatgoodsiteController', function eatgoodsiteControlle
            
         }, 0);
     });
-
-    console.log( $scope.storeList );
-  
 });
 
 eatgoodsiteApp.controller('eatgoodsiteStoreDetailController', function eatgoodsiteStoreDetailController($scope, $timeout,$http, $location) {
@@ -78,25 +76,43 @@ eatgoodsiteApp.controller('eatgoodsiteStoreDetailController', function eatgoodsi
             'value': value
         });
     }
-    
+    function getUrlVars() {
+        var vars = {};
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+            vars[key] = value;
+        });
+        return vars;
+    }
 
     $scope.$watch('$viewContentLoaded',function () {
-        var param1 = $location.search('sid') 
+        var sid = getUrlVars()['sid'] ;
         var date = moment().format('YYYYMMDDHHmmss');
         $http.get(theLink + 'storedetail.json?'+date).then(function(result) {
-            $scope.storedetail = result.data[0];
-            
-         });
+            $scope.storedetail = result.data[sid];
+        });
         
         $timeout(function () {
            
         }, 0);
     });
 
-    console.log( $scope.storedetail );
   
 });
 
 $(document).ready(function () {
-   
+    tns({
+        container: '.my-slider',
+        slideBy: 1,
+        speed: 300,
+        autoplayTimeout:1500,
+        autoplay: false,
+        nav: false,
+        touch: false,
+        center: true,
+        mouseDrag: false,
+        swipeAngle: false,
+        controls: true,
+        controlsText:["<",">"],
+        controlsContainer: "#customize-controls"
+    });
 });
