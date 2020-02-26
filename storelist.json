@@ -1,0 +1,66 @@
+[
+        {
+            "sort" : 1,
+            "area" : "全港",
+            "image" : "./public/drfruit/info_pic-DrFruit01.png",
+            "link" : "./drfruit/index.html",
+            "title" : "Dr. Fruits 水果博士",
+            "method" : "專人外送(食材)"
+        }, {
+            "sort" : 2,
+            "area" : "香港",
+            "image" : "./public/oisix/info_pic-Oisix01.png",
+            "link" : "./oisix/index.html",
+            "title" : "Oisix香港 - 日本美食宅配",
+            "method" : "專人外送(食材)"
+        }, {
+            "sort" : 3,
+            "area" : "新界",
+            "image" : "./public/southstream/info_pic-South01.png",
+            "link" : "./southstream/index.html",
+            "title" : "South Stream Market (南川市場)",
+            "method" : "專人外送(食材)"
+        }, {
+            "sort" : 4,
+            "area" : "九龍",
+            "image" : "./public/hau/info_pic-Hau-Listing.png",
+            "link" : "./hau/index.html",
+            "title" : "厚福館",
+            "method" : "店內自取(菜式)"
+        }, {
+            "sort" : 5,
+            "area" : "九龍",
+            "image" : "./public/royal/info_pic-Royal-Listing.png",
+            "link" : "./royal/index.html",
+            "title" : "帝京酒店 帝京軒",
+            "method" : "專人外送(菜式)／店內自取(菜式)"
+        }, {
+            "sort" : 6,
+            "area" : "九龍",
+            "image" : "./public/fish/info_pic-fish_Listing.png",
+            "link" : "./fish/index.html",
+            "title" : "漁小館",
+            "method" : "店內自取(菜式)"
+        }, {
+            "sort" : 7,
+            "area" : "九龍",
+            "image" : "./public/loktongkee/info_pic-chicken01.png",
+            "link" : "./loktongkee/index.html",
+            "title" : "樂湯雞麵館",
+            "method" : "店內自取(菜式)"
+        }, {
+            "sort" : 8,
+            "area" : "香港",
+            "image" : "./public/doublechefsmarket/1.jpg",
+            "link" : "./doublechefsmarket/index.html",
+            "title" : "Double Chefs Market",
+            "method" : "專人外送(食材)"
+        }, {
+            "sort" : 8,
+            "area" : "全港",
+            "image" : "./public/eastocean/1.jpg",
+            "link" : "./eastocean/index.html",
+            "title" : "東海飲食集團",
+            "method" : "專人外送(菜式)"
+        }
+]

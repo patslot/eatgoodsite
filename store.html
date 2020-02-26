@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html ng-app="eatgoodsite">
+
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport"
+		content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<meta property="og:type"          content="website" />
+	<meta property="og:url"           content="https://campaign.nextdigital.com.hk/eatgoodsite/index.html" />
+	<meta property="og:title"         content=" "/>
+	<meta property="og:description"   content=" "/>
+	<meta property="og:image"         content="https://campaign.nextdigital.com.hk/eatgoodsite/public/fbshare.jpg"/>
+	<meta property="fb:app_id"     	  content="2303520236552529"/>
+	<title>和你食好Site</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<script type="text/javascript" src="./public/assets/bundle.js"></script>
+	<link rel="stylesheet" type="text/css" href="./public/assets/main.css">
+  
+
+
+
+
+</head>
+
+<body id="index" ng-controller="eatgoodsiteStoreDetailController">
+   
+	<div class="container-fuild ">
+		<div class="header">
+			<div class="btn_back"><a href="./index.html"><img src="./public/btn_back.png"></a></div>
+		</div>
+	</div>
+	<div id="container">
+		<div class="articleDetailCon">
+            <div class="storePhoto">
+                <div class="my-slider">
+                    <div class="slide-con">
+                        <img src="./public/drfruit/info_pic-DrFruit01.png">
+                    </div>
+                    <div class="slide-con">
+                        <img src="./public/drfruit/info_pic-DrFruit02.png">
+                    </div>
+                    <div class="slide-con">
+                        <img src="./public/drfruit/info_pic-DrFruit03.png">
+                    </div>
+                </div>   
+                <ul class="controls" id="customize-controls" aria-label="Carousel Navigation" tabindex="0">
+                    <li class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
+                        <i class="fa fa-angle-left fa-5x" style="color: #fff;"></i>
+                    </li>
+                    <li class="next" data-controls="next" aria-controls="customize" tabindex="-1">
+                        <i class="fa fa-angle-right fa-5x" style="color: #fff;"></i> 
+                    </li>
+                 </ul>
+            </div>
+            <div class="storeDetail" ng-bind-html="storedetail.storeDetail">
+              
+            </div>
+            <div class="relatedarticleCon">
+                <div class="relatedarticleHeader">相關文章</div>
+                <div class="relatedarticle">
+                    <div class="relatedarticleLink">
+                        <a href="https://etw.nextdigital.com.hk/article/3_60608527" target="_blank"></a>
+                    </div>
+                    <div class="relatedarticleImage">
+                        <img src="./public/doublechefsmarket/relate1.jpg">
+                    </div>
+                    <div class="relatedarticleTitle">
+                        【火鍋燒肉外賣】日菜廚師主理 高質外送和牛壽喜燒＋Shabu Shabu＋燒肉 包裝盒附QR Code教煮
+                    </div>
+                 </div>
+            </div>
+
+		</div>
+       
+	</div>
+
+</body>
+
+</html>

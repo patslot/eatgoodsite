@@ -17,11 +17,11 @@
 	<link rel="stylesheet" type="text/css" href="./public/assets/main.css">
 
 
-
-
 </head>
 
 <body id="index" ng-controller="eatgoodsiteController">
+
+
 	<div class="container-fuild ">
 		<div class="header">
 			<div class="btn_back"><a href="#"><img src="./public/btn_back.png"></a></div>
@@ -35,13 +35,13 @@
 		</div>
 	</div>
 	<div id="container">
-		<div class="articleCon" ng-repeat="store in storeList | orderBy:['publicDate','sort']">
+		<div class="articleCon" ng-repeat="store in storeList | orderBy:['sort']">
 			<div class="area">{{ store.area }}</div>
 			<div class="articlesImage"><img ng-src="{{ store.image}}" ></div>
 			<div class="articleLink"><a href="{{ store.link }}"></a></div>
 			<div class="articleTitle">
 				<h3>{{ store.title }}</h3>
-				<div class="address"><p>{{ store.address }}</p></div>
+				<div class="method"><p ng-bind-html="store.method"></p></div>
 			</div>
 		</div>
 	

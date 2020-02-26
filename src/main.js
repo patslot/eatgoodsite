@@ -4,46 +4,28 @@ window.$ = $;
 global.jQuery = $;
 
 import angular from 'angular';
-
+import "angular-sanitize/angular-sanitize.js";
+import moment from 'moment';
 import "popper.js";
 import "./scss/main.scss";
-var campaign_name = "eatgoodsite";
-import "../node_modules/tiny-slider/src/tiny-slider.scss";
 
+import "../node_modules/tiny-slider/src/tiny-slider.scss";
 import "../node_modules/font-awesome/css/font-awesome.css";
 
+var campaign_name = "eatgoodsite";
+if (document.location.hostname == "localhost") {
+    var theLink = 'http://localhost:8888/eatgoodsite/';
+} else {
+    var theLink = 'https://campaign.nextdigital.com.hk/eatgoodsite/dev/v6/';
+}
 
-var eatgoodsiteApp = angular.module('eatgoodsite', []);
 
-eatgoodsiteApp.controller('eatgoodsiteController', function eatgoodsiteController($scope, $timeout) {
+
+var eatgoodsiteApp = angular.module('eatgoodsite', ['ngSanitize']);
+
+eatgoodsiteApp.controller('eatgoodsiteController', function eatgoodsiteController($scope, $timeout,$http) {
     $scope.platform = "web"; 
-    $scope.storeList = [
-        {
-            "sort" : 2,
-            "publicDate" :  new Date("2020-02-24"),
-            "area" : "香港 ｜北角",
-            "image" : "./public/oisix/feature.png",
-            "link" : "./oisix/index.html",
-            "title" : "Oisix香港 - 日本美食宅配",
-            "address" : "Osaki Farm: Gate City Osaki East 5F 1-11-2 Osaki, Shinagawa-ku, Tokyo 141-0032, Japan"
-        }, {
-            "sort" : 2,
-            "publicDate" :  new Date("2020-02-25"),
-            "area" : "香港 ｜銅鑼灣",
-            "image" : "./public/oisix/feature.png",
-            "link" : "./oisix/index.html",
-            "title" : "Oisix香港 - 日本美食宅配",
-            "address" : "Osaki Farm: Gate City Osaki East 5F 1-11-2 Osaki, Shinagawa-ku, Tokyo 141-0032, Japan"
-        },{
-            "sort" : 1,
-            "publicDate" :  new Date("2020-02-25"),
-            "area" : "香港 ｜中環",
-            "image" : "./public/oisix/feature.png",
-            "link" : "./oisix/index.html",
-            "title" : "Oisix香港 - 日本美食宅配",
-            "address" : "Osaki Farm: Gate City Osaki East 5F 1-11-2 Osaki, Shinagawa-ku, Tokyo 141-0032, Japan"
-        }
-    ];
+    $scope.storeList = [];
 
     function gaEventcall(action, category, label, value){
         gtag('event', action, {
@@ -71,6 +53,11 @@ eatgoodsiteApp.controller('eatgoodsiteController', function eatgoodsiteControlle
 
     $scope.$watch('$viewContentLoaded',function () {
         var payload = {};
+        var date = moment().format('YYYYMMDDHHmmss');
+        $http.get(theLink + 'storelist.json?'+date).then(function(result) {
+            $scope.storeList = result.data;
+            console.log(result.data);
+         });
         $timeout(function () {
            
         }, 0);
@@ -80,8 +67,36 @@ eatgoodsiteApp.controller('eatgoodsiteController', function eatgoodsiteControlle
   
 });
 
+eatgoodsiteApp.controller('eatgoodsiteStoreDetailController', function eatgoodsiteStoreDetailController($scope, $timeout,$http, $location) {
+    $scope.platform = "web"; 
+    $scope.storeList = [];
 
+    function gaEventcall(action, category, label, value){
+        gtag('event', action, {
+            'event_category': category,
+            'event_label': label,
+            'value': value
+        });
+    }
+    
+
+    $scope.$watch('$viewContentLoaded',function () {
+        var param1 = $location.search('sid') 
+        var date = moment().format('YYYYMMDDHHmmss');
+        $http.get(theLink + 'storedetail.json?'+date).then(function(result) {
+            $scope.storedetail = result.data[0];
+            
+         });
+        
+        $timeout(function () {
+           
+        }, 0);
+    });
+
+    console.log( $scope.storedetail );
+  
+});
 
 $(document).ready(function () {
-    // init();
+   
 });

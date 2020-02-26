@@ -109,7 +109,7 @@ img {
             font-size: 1.5em ;
             margin: 10px 0 0 0;
         }
-        .address{
+        .method{
             margin-left: 0px;
             display: flex;
             align-items: flex-start;
@@ -120,16 +120,7 @@ img {
 
             }
         }
-        .address::before {
-            background-repeat: no-repeat;
-            background-image: url('../../public/location_icon_1.png');
-            background-size: 18px 18px;
-            background-position: center center;
-            align-items: center;
-            width: 21px; 
-            height: 25px;
-            content:"";
-        }
+        
     }
     .articleLink{
         a{
@@ -179,10 +170,9 @@ img {
     }
 }
 .storeDetail{
-    width: calc(100% - 20px);
+    width: calc(100% - 50px);
     position: relative;
-    margin: 10px;
-    padding: 10px;
+    margin: 25px;
     .storeHeader{
         width: calc(100% - 20px);
         border-bottom: 1px solid $font-color;
@@ -200,6 +190,7 @@ img {
             line-height: 26px;
             margin:0px;
             color: $font-color;
+            width: 80%;
         }
         a{
             text-decoration: none;
@@ -242,11 +233,27 @@ img {
     }
     .website{
         margin-left: 0px;
+        width: 100%;
         display: flex;
         align-items: flex-start;
         p{
+            width: 86%;
             line-height: 26px;
-            margin:0px;
+            margin:0px;/* These are technically the same, but use both */
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+          
+            -ms-word-break: break-all;
+            /* This is the dangerous one in WebKit, as it breaks things wherever */
+            word-break: break-all;
+            /* Instead use this non-standard one: */
+            word-break: break-word;
+          
+            /* Adds a hyphen where the word breaks, if supported (No Blink) */
+            -ms-hyphens: auto;
+            -moz-hyphens: auto;
+            -webkit-hyphens: auto;
+            hyphens: auto;
         }
         a{
             text-decoration: none;
@@ -266,10 +273,9 @@ img {
    
 }
 .relatedarticleCon{
-    width: calc(100% - 20px);
+    width: calc(100% - 50px);
     position: relative;
-    margin: 10px;
-    padding: 10px;
+    margin: 25px;
     .relatedarticleHeader{
         width: calc(100% - 20px);
         border-bottom: 1px solid $font-color;
