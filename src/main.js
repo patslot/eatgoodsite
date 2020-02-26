@@ -8,7 +8,7 @@ import "angular-sanitize/angular-sanitize.js";
 import moment from 'moment';
 import "popper.js";
 import "./scss/main.scss";
-import { tns } from  "../node_modules/tiny-slider/src/tiny-slider";
+// import { tns } from  "../node_modules/tiny-slider/src/tiny-slider";
 
 import "../node_modules/tiny-slider/src/tiny-slider.scss";
 import "../node_modules/font-awesome/css/font-awesome.css";
@@ -85,34 +85,34 @@ eatgoodsiteApp.controller('eatgoodsiteStoreDetailController', function eatgoodsi
     }
 
     $scope.$watch('$viewContentLoaded',function () {
-        var sid = getUrlVars()['sid'] ;
-        var date = moment().format('YYYYMMDDHHmmss');
-        $http.get(theLink + 'storedetail.json?'+date).then(function(result) {
-            $scope.storedetail = result.data[sid];
-        });
+        // var sid = getUrlVars()['sid'] ;
+        // var date = moment().format('YYYYMMDDHHmmss');
+        // $http.get(theLink + 'storedetail.json?'+date).then(function(result) {
+        //     $scope.storedetail = result.data[sid];
+        // });
         
-        $timeout(function () {
+        // $timeout(function () {
            
-        }, 0);
+        // }, 0);
     });
 
   
 });
 
 $(document).ready(function () {
-    tns({
-        container: '.my-slider',
-        slideBy: 1,
-        speed: 300,
-        autoplayTimeout:1500,
-        autoplay: false,
-        nav: false,
-        touch: false,
-        center: true,
-        mouseDrag: false,
-        swipeAngle: false,
-        controls: true,
-        controlsText:["<",">"],
-        controlsContainer: "#customize-controls"
-    });
+    // tns({
+    //     container: '.my-slider',
+    //     slideBy: 1,
+    //     speed: 300,
+    //     autoplayTimeout:1500,
+    //     autoplay: false,
+    //     nav: false,
+    //     touch: false,
+    //     center: true,
+    //     mouseDrag: false,
+    //     swipeAngle: false,
+    //     controls: true,
+    //     controlsText:["<",">"],
+    //     controlsContainer: "#customize-controls"
+    // });
 });
