@@ -17,7 +17,7 @@ var campaign_name = "eatgoodsite";
 if (document.location.hostname == "localhost") {
     var theLink = 'http://localhost:8888/eatgoodsite/';
 } else {
-    var theLink = 'https://campaign.nextdigital.com.hk/eatgoodsite/dev/v17/';
+    var theLink = 'https://campaign.nextdigital.com.hk/eatgoodsite/';
 }
 
 
@@ -28,13 +28,6 @@ eatgoodsiteApp.controller('eatgoodsiteController', function eatgoodsiteControlle
     $scope.platform = "web"; 
     $scope.storeList = [];
 
-    function gaEventcall(action, category, label, value){
-        gtag('event', action, {
-            'event_category': category,
-            'event_label': label,
-            'value': value
-        });
-    }
     $scope.articleClick = function(a){
         var win = window.open(a.LINK, '_blank');
         if (win) {
@@ -69,13 +62,6 @@ eatgoodsiteApp.controller('eatgoodsiteStoreDetailController', function eatgoodsi
     $scope.platform = "web"; 
     $scope.storeList = [];
 
-    function gaEventcall(action, category, label, value){
-        gtag('event', action, {
-            'event_category': category,
-            'event_label': label,
-            'value': value
-        });
-    }
     function getUrlVars() {
         var vars = {};
         var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
