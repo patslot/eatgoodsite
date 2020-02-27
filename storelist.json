@@ -48,12 +48,5 @@
             "link" : "./doublechefsmarket/index.html",
             "title" : "Double Chefs Market",
             "method" : "專人外送(食材)"
-        }, {
-            "sort" : 8,
-            "area" : "全港",
-            "image" : "./public/eastocean/1.jpg",
-            "link" : "./eastocean/index.html",
-            "title" : "東海飲食集團",
-            "method" : "專人外送(菜式)"
         }
 ]
