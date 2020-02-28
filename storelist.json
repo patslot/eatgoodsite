@@ -55,5 +55,83 @@
             "link" : "./doublechefsmarket/index.html",
             "title" : "Double Chefs Market",
             "method" : "專人外送(食材)"
+        }, {
+            "sort" : 9,
+            "area" : "全港",
+            "image" : "./public/gyukaku/1.jpg",
+            "link" : "./gyukaku/index.html",
+            "title" : "牛角",
+            "method" : "店內自取(菜式)"
+        }, {
+            "sort" : 10,
+            "area" : "九龍",
+            "image" : "./public/616/1.jpg",
+            "link" : "./616/index.html",
+            "title" : "616麥子",
+            "method" : "專人外送(菜式)"
+        }, {
+            "sort" : 11,
+            "area" : "九龍",
+            "image" : "./public/616chicken/1.jpg",
+            "link" : "./616chicken/index.html",
+            "title" : "陸陸雞煲火鍋",
+            "method" : "店內自取(菜式)"
+        }, {
+            "sort" : 12,
+            "area" : "全港",
+            "image" : "./public/chumplus/1.jpg",
+            "link" : "./chumplus/index.html",
+            "title" : "Chum Plus",
+            "method" : "店內自取(菜式)／專人外送(菜式) "
+        }, {
+            "sort" : 13,
+            "area" : "新界",
+            "image" : "./public/poapoasoup/1.jpg",
+            "link" : "./poapoasoup/index.html",
+            "title" : "嬤嬤湯",
+            "method" : "專人外送(菜式)"
+        }, {
+            "sort" : 14,
+            "area" : "全港",
+            "image" : "./public/chefstudio/1.jpg",
+            "link" : "./chefstudio/index.html",
+            "title" : "Chef Studio by Eddy Express",
+            "method" : "專人外送(菜式)"
+        }, {
+            "sort" : 15,
+            "area" : "全港",
+            "image" : "./public/chillifagara/1.jpg",
+            "link" : "./chillifagara/index.html",
+            "title" : "麻辣燙 Chilli Fagara",
+            "method" : "店內自取(菜式)/專人外送(菜式)Deliveroo"
+        }, {
+            "sort" : 16,
+            "area" : "全港",
+            "image" : "./public/postopubblico/1.jpg",
+            "link" : "./postopubblico/index.html",
+            "title" : "Posto Pubblico",
+            "method" : "店內自取(菜式)/專人外送(菜式)Deliveroo"
+        }, {
+            "sort" : 17,
+            "area" : "全港",
+            "image" : "./public/fini/1.jpg",
+            "link" : "./fini/index.html",
+            "title" : "FINI’s",
+            "method" : "店內自取(菜式)/專人外送(菜式)Deliveroo"
+        }, {
+            "sort" : 18,
+            "area" : "全港",
+            "image" : "./public/homeslice/1.jpg",
+            "link" : "./homeslice/index.html",
+            "title" : "Homeslice",
+            "method" : "店內自取(菜式)/專人外送(菜式)Deliveroo"
+        }, {
+            "sort" : 19,
+            "area" : "全港",
+            "image" : "./public/tqm/1.jpg",
+            "link" : "./tqm/index.html",
+            "title" : "Te Quiero Mucho",
+            "method" : "店內自取(菜式)/專人外送(菜式)Deliveroo"
         }
+        
 ]
