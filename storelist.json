@@ -7,6 +7,13 @@
             "title" : "Dr. Fruits 水果博士",
             "method" : "專人外送(食材)"
         }, {
+            "sort" : 2,
+            "area" : "香港",
+            "image" : "./public/oisix/info_pic-Oisix01.png",
+            "link" : "./oisix/index.html",
+            "title" : "Oisix香港 - 日本美食宅配",
+            "method" : "專人外送(食材)"
+        }, {
             "sort" : 3,
             "area" : "新界",
             "image" : "./public/southstream/info_pic-South01.png",
