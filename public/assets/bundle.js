@@ -67855,7 +67855,7 @@ var campaign_name = "eatgoodsite";
 if (document.location.hostname == "localhost") {
     var theLink = 'http://localhost:8888/eatgoodsite/';
 } else {
-    var theLink = 'https://campaign.nextdigital.com.hk/eatgoodsite/dev/v21/';
+    var theLink = 'https://campaign.nextdigital.com.hk/eatgoodsite/dev/v25/';
 }
 
 

@@ -1,5 +1,4 @@
 [
-
         {
             "sort" : 21,
             "area" : "全港",
@@ -7,30 +6,26 @@
             "link" : "./butcherscut/index.html",
             "title" : "Butcher's Cut",
             "method" : "專人外送(食材)"
-        }, 
-
-        {
+        },{
             "sort" : 20,
             "area" : "九龍",
             "image" : "./public/labeat/Info_Pic01.jpg",
             "link" : "./labeat/index.html",
             "title" : "LAB EAT Restaurant & Bar",
             "method" : "店內自取(菜式)"
-        }, 
-        
-        {
+        },{
             "sort" : 19,
-            "area" : "全港",
-            "image" : "./public/drfruit/info_pic-DrFruit01.png",
-            "link" : "./drfruit/index.html",
-            "title" : "Dr. Fruits 水果博士",
-            "method" : "專人外送(食材)"
-        }, {
-            "sort" : 18,
             "area" : "香港",
             "image" : "./public/oisix/info_pic-Oisix01.png",
             "link" : "./oisix/index.html",
             "title" : "Oisix香港 - 日本美食宅配",
+            "method" : "專人外送(食材)"
+        },{
+            "sort" : 18,
+            "area" : "全港",
+            "image" : "./public/drfruit/info_pic-DrFruit01.png",
+            "link" : "./drfruit/index.html",
+            "title" : "Dr. Fruits 水果博士",
             "method" : "專人外送(食材)"
         }, {
             "sort" : 17,
