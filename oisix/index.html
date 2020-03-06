@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html ng-app="eatgoodsite">
+
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport"
+		content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<meta property="og:type"          content="website" />
+	<meta property="og:url"           content="https://campaign.nextdigital.com.hk/eatgoodsite/index.html" />
+	<meta property="og:title"         content=" "/>
+	<meta property="og:description"   content=" "/>
+	<meta property="og:image"         content="https://campaign.nextdigital.com.hk/eatgoodsite/public/fbshare.jpg"/>
+	<meta property="fb:app_id"     	  content="2303520236552529"/>
+	<title>在家食好Site</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<script type="text/javascript" src="../public/assets/bundle.js"></script>
+	<link rel="stylesheet" type="text/css" href="../public/assets/main.css">
+    <script src="../public/assets/tiny-slider.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-92777396-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-92777396-35');
+</script>
+
+
+
+</head>
+
+<body id="index" ng-controller="eatgoodsiteController">
+   
+	<div class="container-fuild ">
+		<div class="header">
+			<div class="btn_back"><a href="../index.html"><img src="../public/btn_back.png"></a></div>
+		</div>
+	</div>
+	<div id="container">
+		<div class="articleDetailCon">
+            <div class="storePhoto">
+                <div class="my-slider">
+                    <div class="slide-con">
+                        <img src="../public/oisix/info_pic-Oisix01.png">
+                    </div>
+                    <div class="slide-con">
+                        <img src="../public/oisix/info_pic-Oisix02.png">
+                    </div>
+                    <div class="slide-con">
+                        <img src="../public/oisix/info_pic-Oisix03.png">
+                    </div>
+                </div>   
+                <ul class="controls" id="customize-controls" aria-label="Carousel Navigation" tabindex="0">
+                    <li class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
+                        <i class="fa fa-angle-left fa-5x" style="color: #fff;"></i>
+                    </li>
+                    <li class="next" data-controls="next" aria-controls="customize" tabindex="-1">
+                        <i class="fa fa-angle-right fa-5x" style="color: #fff;"></i> 
+                    </li>
+                 </ul>
+            </div>
+            <div class="storeDetail">
+                <div class="storeHeader">餐廳資料</div>
+                <div class="storeName">Oisix香港 - 日本美食宅配</div>
+                <div class="phone"><p><a href="tel:81979016">8197 9016</a></p></div>
+                <div class="website"><p><a href="https://hk.oisix.com/shop.sc--200304_ad__html.htm" target="_blank">https://hk.oisix.com/shop.sc--200304_ad__html.htm</a></p></div>
+                <p><b>營業時間：</b>全日供應</p>
+                <p><b>外賣性質：</b>專人外送(食材）<br>送貨日為逢星期四、星期六及星期日。優惠價$348「Oisix Weekly」免運費體驗組合，每人限購一次，詳情請在網站查詢。</p>
+                <div class="storeHeader">簡介</div>
+                <p>Oisix HK 是全港第一間網上超市提供日本新鮮蔬果的送貨服務，集合日本各地有機或低農藥栽培的農作物，並且設有嚴謹的食安標準。我們更提供Oisix Weekly每週宅配服務，定期為您配送安心安全而美味的有機蔬果。蔬果之外我們也販賣多款海產，肉品，人氣甜品零食以及Oisix獨家商品，直送到府上讓您不用辛勞也能夠品嚐到安全有機日本食材。</p>
+                
+            </div>
+            
+		</div>
+       
+	</div>
+<script>
+ var slider = tns({
+        container: '.my-slider',
+        slideBy: 1,
+        speed: 300,
+        autoplayTimeout:1500,
+        autoplay: false,
+        nav: false,
+        touch: false,
+        center: true,
+        mouseDrag: false,
+        swipeAngle: false,
+        controls: true,
+        controlsText:["<",">"],
+        controlsContainer: "#customize-controls"
+    });
+</script>
+</body>
+
+</html>

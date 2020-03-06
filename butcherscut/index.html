@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html ng-app="eatgoodsite">
+
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport"
+		content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<meta property="og:type"          content="website" />
+	<meta property="og:url"           content="https://campaign.nextdigital.com.hk/eatgoodsite/index.html" />
+	<meta property="og:title"         content=" "/>
+	<meta property="og:description"   content=" "/>
+	<meta property="og:image"         content="https://campaign.nextdigital.com.hk/eatgoodsite/public/fbshare.jpg"/>
+	<meta property="fb:app_id"     	  content="2303520236552529"/>
+	<title>在家食好Site</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<script type="text/javascript" src="../public/assets/bundle.js"></script>
+	<link rel="stylesheet" type="text/css" href="../public/assets/main.css">
+  
+    <script src="../public/assets/tiny-slider.js"></script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-92777396-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-92777396-35');
+</script>
+
+
+</head>
+
+<body id="index" ng-controller="eatgoodsiteController">
+   
+	<div class="container-fuild ">
+		<div class="header">
+			<div class="btn_back"><a href="../index.html"><img src="../public/btn_back.png"></a></div>
+		</div>
+	</div>
+	<div id="container">
+		<div class="articleDetailCon">
+            <div class="storePhoto">
+                <div class="my-slider">
+                    <div class="slide-con">
+                        <img src="../public/butcherscut/Butchers01.jpg">
+                    </div>
+                    <div class="slide-con">
+                        <img src="../public/butcherscut/Butchers02.jpg">
+                    </div>
+                    <div class="slide-con">
+                        <img src="../public/butcherscut/Butchers03.jpg">
+                    </div>
+                </div>   
+                <ul class="controls" id="customize-controls" aria-label="Carousel Navigation" tabindex="0">
+                    <li class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
+                        <i class="fa fa-angle-left fa-5x" style="color: #fff;"></i>
+                    </li>
+                    <li class="next" data-controls="next" aria-controls="customize" tabindex="-1">
+                        <i class="fa fa-angle-right fa-5x" style="color: #fff;"></i> 
+                    </li>
+                 </ul>
+            </div>
+            <div class="storeDetail">
+                <div class="storeHeader">餐廳資料</div>
+                <div class="storeName">BUTCHERS CUT</div>
+                <div class="address"><p>荃灣沙咀道29-35號，科技中心，27/F，2705室</p></div>
+                <div class="phone"><p><a href="tel:51141499">51141499</a></p></div>
+                <div class="website"><p><a href="https://www.facebook.com/butcherscuthk" target="_blank">
+                    https://www.facebook.com/butcherscuthk
+                    </a></p></div>
+                <p><b>營業時間：</b>全日24小時Facebook/WhatsApp下單</p>
+                <p><b>外賣性質：</b>專人外送(食材)</p>
+                <div class="storeHeader">簡介</div>
+                <p>BUTCHERS CUT 近年香港火紅網上牛扒凍肉網店，首創以套餐形式出售牛扒Set, 以優惠價錢提供世界各地頂級牛扒凍肉，好讓客人安在家中享受到酒店扒房級數牛扒，並提供送貨服務！</p>
+                    <p>（本店提供-18度急凍速運到公司或住宅）</p>
+                    <p>（BUTCHERS CUT 貨品包括USA prime安格斯美國牛, 日本/澳洲和牛, BUTCHERS CUT 自家製Dry Age牛扒,西班牙黑毛豬.....等等)</p>
+                    <p>*本店自設廠房，已領有食環署食物工場牌照，並以嚴格衛生標準加工包裝出售！</p>
+            </div>
+            
+		</div>
+       
+	</div>
+<script>
+ var slider = tns({
+        container: '.my-slider',
+        slideBy: 1,
+        speed: 300,
+        autoplayTimeout:1500,
+        autoplay: false,
+        nav: false,
+        touch: false,
+        center: true,
+        mouseDrag: false,
+        swipeAngle: false,
+        controls: true,
+        controlsText:["<",">"],
+        controlsContainer: "#customize-controls"
+    });
+</script>
+</body>
+
+</html>

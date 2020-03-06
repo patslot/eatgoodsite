@@ -44,7 +44,7 @@
 		</div>
 	</div>
 	<div id="container">
-		<div class="articleCon" ng-repeat="store in storeList | orderBy:['sort']">
+		<div class="articleCon" ng-repeat="store in storeList | orderBy:['-sort']">
 			<div class="area">{{ store.area }}</div>
 			<div class="articlesImage"><img ng-src="{{ store.image}}" ></div>
 			<div class="articleLink"><a href="{{ store.link }}"></a></div>
