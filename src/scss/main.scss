@@ -207,6 +207,31 @@ img {
         height: 25px;
         content:"";
     }
+    .menu{
+        margin-left: 0px;
+        display: flex;
+        align-items: flex-start;
+        p{
+            line-height: 26px;
+            margin:0px;
+            color: $font-color;
+            width: 80%;
+        }
+        a{
+            text-decoration: none;
+            color: $font-color;
+        }
+    }
+    .menu::before {
+        background-repeat: no-repeat;
+        background-image: url('../../public/menu_icon_1.png');
+        background-size: 18px 18px;
+        background-position: center center;
+        align-items: center;
+        width: 21px; 
+        height: 25px;
+        content:"";
+    }
     .phone{
         margin-left: 0px;
         display: flex;

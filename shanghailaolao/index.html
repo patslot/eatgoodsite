@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html ng-app="eatgoodsite">
+
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport"
+		content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<meta property="og:type"          content="website" />
+	<meta property="og:url"           content="https://campaign.nextdigital.com.hk/eatgoodsite/index.html" />
+	<meta property="og:title"         content=" "/>
+	<meta property="og:description"   content=" "/>
+	<meta property="og:image"         content="https://campaign.nextdigital.com.hk/eatgoodsite/public/fbshare.jpg"/>
+	<meta property="fb:app_id"     	  content="2303520236552529"/>
+	<title>在家食好Site</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<script type="text/javascript" src="../public/assets/bundle.js"></script>
+	<link rel="stylesheet" type="text/css" href="../public/assets/main.css">
+  
+    <script src="../public/assets/tiny-slider.js"></script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-92777396-35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-92777396-35');
+</script>
+
+
+</head>
+
+<body id="index" ng-controller="eatgoodsiteController">
+   
+	<div class="container-fuild ">
+		<div class="header">
+			<div class="btn_back"><a href="../index.html"><img src="../public/btn_back.png"></a></div>
+		</div>
+	</div>
+	<div id="container">
+		<div class="articleDetailCon">
+            <div class="storePhoto">
+                <div class="my-slider">
+                    <div class="slide-con">
+                        <img src="../public/shanghailaolao/SH_Info_Pic01.jpg">
+                    </div>
+                    <div class="slide-con">
+                        <img src="../public/shanghailaolao/SH_Info_Pic02.jpg">
+                    </div>
+                    <div class="slide-con">
+                        <img src="../public/shanghailaolao/SH_Info_Pic03.jpg">
+                    </div>
+                </div>   
+                <ul class="controls" id="customize-controls" aria-label="Carousel Navigation" tabindex="0">
+                    <li class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
+                        <i class="fa fa-angle-left fa-5x" style="color: #fff;"></i>
+                    </li>
+                    <li class="next" data-controls="next" aria-controls="customize" tabindex="-1">
+                        <i class="fa fa-angle-right fa-5x" style="color: #fff;"></i> 
+                    </li>
+                 </ul>
+            </div>
+            <div class="storeDetail">
+                <div class="storeHeader">餐廳資料</div>
+                <div class="storeName">上海姥姥 Shanghai Lao Lao</div>
+                <div class="address"><p>全線分店
+                </p></div>
+                <div class="phone">
+                    <p>
+                        <a href="tel:26077909">2607 7909</a>
+                    </p>
+                </div>
+                <div class="website">
+                    <p>
+                        <a href="https://www.facebook.com/shanghailaolao.hk/" target="_blank">https://www.facebook.com/shanghailaolao.hk/</a>
+                    </p>
+                </div>
+                <div class="menu">
+                    <p>
+                        <a href="./SH_menu.pdf" target="_blank">外賣菜單</a>
+                    </p>
+                </div>
+                <p><b>營業時間：</b>營業時間或有臨時變更，詳情可聯絡各分店查詢
+                </p>
+                <p><b>外賣性質：</b><br>
+                    店內自取(菜式)，請參閱外賣自取餐牌，包括$78蔥油雞送涼菜。<br>
+                    專人外送(菜式)，請參閱外賣自取餐牌。並透過Deliveroo落單及送遞。
+                </p>
+                <div class="storeHeader">簡介</div>
+                <p>上海姥姥環境雅緻舒適，主打小籠包及手製拉麵，每天堅持以新鮮的材料、「手製心造」的理念，烹調出各款精選滬菜。取名「姥姥」，寓意廚師們會如「姥姥」一樣， 堅持手製、用心烹調，為顧客帶來最正宗的上海美味。上海姥姥採用開放式廚房設 計，讓每一位顧客都能夠親睹拉麵的新鮮拉製及巧手點心的製作過程，營造更精彩、更開懷的餐飲體驗。
+                    </p>
+            </div>
+            
+		</div>
+       
+	</div>
+<script>
+ var slider = tns({
+        container: '.my-slider',
+        slideBy: 1,
+        speed: 300,
+        autoplayTimeout:1500,
+        autoplay: false,
+        nav: false,
+        touch: false,
+        center: true,
+        mouseDrag: false,
+        swipeAngle: false,
+        controls: true,
+        controlsText:["<",">"],
+        controlsContainer: "#customize-controls"
+    });
+</script>
+</body>
+
+</html>
