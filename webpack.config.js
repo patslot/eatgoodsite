@@ -19,7 +19,21 @@ module.exports = {
                 test:/\.(s*)css$/,
                 use: extractPlugin.extract({
                     fallback: 'style-loader',
-                    use: ['css-loader', 'sass-loader']
+                    use: [
+                        {
+                            loader: 'css-loader',
+                            options:{
+                                minimize: false,
+                                sourceMap: false 
+                            }
+                        }, 
+                        {
+                            loader: 'sass-loader',
+                            options: {
+                                sourceMap: false
+                            }
+                        }
+                    ]
                 })
             },
             {
