@@ -1,13 +1,5 @@
 [
         {
-            "sort" : 25,
-            "area" : "全港",
-            "image" : "./public/pizzahut/PizzaHut_Info_Pic01.jpg",
-            "link" : "./pizzahut/index.html",
-            "title" : "必勝客Pizza Hut",
-            "method" : "店內自取(菜式)／專人外送(菜式)"
-        },
-        {
             "sort" : 24,
             "area" : "全港",
             "image" : "./public/mixiansense/mixian_Info_Pic01.jpg",
